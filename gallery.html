@@ -14,58 +14,90 @@
 
 	<title>gallery</title>
 	<link rel="stylesheet" href="css/gallery.css">
+	<script src="js/animate.js"></script>
+	<script src="js/jquery-3.3.1.min.js"></script>
 </head>
 <!-- <body style="overflow: -Scroll;overflow-x:hidden"> -->
 <body>
 <!-- 头部开始 -->
- <div class="header">
- <div class="container">
- <div class="row">
- 	<div class="header_juzh">
- 		<div class="header_juzh_left">
- 			<a href=""><img src="img/logo-dark-148x30.png" alt=""></a>
- 		</div>
- 		<div class="header_juzh_right col-lg-6 col-md-6 col-sm-12 col-xs-12">
- 			<ul class="header_list">
- 				<li>
- 					<a href="index.html">HOME</a>
- 				</li>
- 			</ul>
- 			<ul class="header_list">
- 				<li>
- 					<a href="tours.html">TOURS</a>
- 				</li>
- 			</ul>
- 			<ul class="header_list">
- 				<li>
- 					<a href="chongfu.html">ABOUT</a>
- 				</li>
- 			</ul>
- 			<ul class="header_list">
- 				<li>
- 					<a href="">PAGES</a>
- 				</li>
- 			</ul>
- 			<ul class="header_list">
- 				<li>
- 					<a href="gallery.html">GALLERY</a>
- 				</li>
- 			</ul>
- 			<ul class="header_list">
- 				<li>
- 					<a href="blog.html">BLOG</a>
- 				</li>
- 			</ul>
- 			<ul class="header_list">
- 				<li>
- 					<a href="">CONTACTS</a>
- 				</li>
- 			</ul>
- 		</div>
- 	</div>
- </div>	
- </div>
- </div>
+<div class="header">
+	<div class="container">
+		<div class="row">
+			<div class="header_juzh">
+				<div class="header_juzh_left">
+					<a href=""><img src="img/logo-dark-148x30.png" alt=""></a>
+				</div>
+				<div class="header_juzh_right col-lg-6 col-md-6 col-sm-12 col-xs-12">
+					<ul class="header_list">
+						<li class="home_li">
+							<a href="index.html">HOME</a>
+							<div class="home_y">
+								<p class="varin">HOME WARINARS2</p>
+								<p class="varin">HOME WARINARS3</p>
+							</div>
+						</li>
+					</ul>
+					<ul class="header_list">
+						<li class="tours_li">
+							<a href="tours.html">TOURS</a>
+							<div class="tours_y">
+								<p class="grid">TOURS GRID</p>
+								<p class="grid">TOURS GRID V2</p>
+								<p class="grid">TOURS LIST</p>
+							</div>
+						</li>
+					</ul>
+					<ul class="header_list">
+						<li class="about_li">
+							<a href="chongfu.html">ABOUT</a>
+							<div class="about_y">
+								<p class="etam">OUR ETAM</p>
+								<p class="etam">TOURS GRID V2</p>
+								<p class="etam">TOURS LIST</p>
+							</div>
+						</li>
+					</ul>
+
+					<ul class="header_list">
+						<li class="gallery_li">
+							<a href="gallery.html">GALLERY</a>
+							<div class="gallery_y">
+								<p class="cobb">GALLERY COBBLES</p>
+								<p class="cobb">WULLWIDTH</p>
+								<p class="cobb">TOURS LIST</p>
+							</div>
+						</li>
+					</ul>
+					<ul class="header_list">
+						<li class="blog_li">
+							<a href="blog.html">BLOG</a>
+							<div class="blog_y">
+								<p class="modern">GALLERY COBBLES</p>
+								<p class="modern">WULLWIDTH</p>
+								<p class="modern">TOURS LIST</p>
+								<p class="modern">WULLWIDTH</p>
+								<p class="modern">GALLERY COBBLES</p>
+								<p class="modern">TOURS LIST</p>
+								<p class="modern">WULLWIDTH</p>
+								<p class="modern">GALLERY COBBLES</p>
+								<p class="modern">TOURS LIST</p>
+							</div>
+						</li>
+					</ul>
+					<ul class="header_list">
+						<li class="contacts_li">
+							<a href="">CONTACTS</a>
+							<div class="contacts_y">
+								<p class="v2">CONTACTS</p>
+								<p class="v2">CONTACTS V2</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 <!-- 头部结束 -->
 <!-- banner开始 -->
  <div class="banner">
@@ -144,3 +176,41 @@
 <!-- 底部结束 -->
 </body>
 </html>
+<script>
+    //	下拉home
+    $(".home_li").on('mouseenter',function () {
+        $(".home_y").stop(true).slideDown('fast');
+    }).on('mouseleave',function(){
+        $(".home_y").stop(true).slideUp('fast');
+    })
+    //	下拉tours
+    $(".tours_li").on('mouseenter',function () {
+        $(".tours_y").stop(true).slideDown('fast');
+    }).on('mouseleave',function(){
+        $(".tours_y").stop(true).slideUp('fast');
+    })
+    //	下拉about
+    $(".about_li").on('mouseenter',function () {
+        $(".about_y").stop(true).slideDown('fast');
+    }).on('mouseleave',function(){
+        $(".about_y").stop(true).slideUp('fast');
+    })
+    //	下拉gellery
+    $(".gallery_li").on('mouseenter',function () {
+        $(".gallery_y").stop(true).slideDown('fast');
+    }).on('mouseleave',function(){
+        $(".gallery_y").stop(true).slideUp('fast');
+    })
+    //	下拉blog
+    $(".blog_li").on('mouseenter',function () {
+        $(".blog_y").stop(true).slideDown('fast');
+    }).on('mouseleave',function(){
+        $(".blog_y").stop(true).slideUp('fast');
+    })
+    //	下拉contacts
+    $(".contacts_li").on('mouseenter',function () {
+        $(".contacts_y").stop(true).slideDown('fast');
+    }).on('mouseleave',function(){
+        $(".contacts_y").stop(true).slideUp('fast');
+    })
+</script>
